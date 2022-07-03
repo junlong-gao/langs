@@ -1,0 +1,9 @@
+(jbuild_version 1)
+
+(library
+   ((name lib)
+      (library_flags -linkall)
+      (libraries (core base yojson qcheck))
+      (inline_tests)
+      (preprocess (pps (ppx_jane))))
+)
