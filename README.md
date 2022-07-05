@@ -52,10 +52,10 @@ Successfully created context "dev.local"
 2. Install the container remote (no need for ssh remote), and choose "clone a
    repo in container..."
 3. When starting the container, the ssh-agent will forward the host sock to the
-ssh-agent inside the container:
+ssh-agent inside the container (I use 1password here in my host macbook):
 ```
-[1263 ms] ssh-agent: SSH_AUTH_SOCK in container (/tmp/vscode-ssh-auth-a884cad7131b91bd33c0eb9b0805814bbd5708e7.sock) forwarded to local host (/private/tmp/com.apple.launchd.hOuZaqKrzA/Listeners).
+[24479 ms] ssh-agent: SSH_AUTH_SOCK in container (/tmp/vscode-ssh-auth-887ccfdacceee8a5aadf7e3d8f4ba89dcdf26b62.sock) forwarded to local host (/Users/junlongg/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock).
 ...
 vscode ➜ /workspaces/langs (main ✗) $ ssh-add -l
-3072 SHA256:kR7tOzLKicg3NgpltuBy9vwmBMMxL6He8n5d9vhfdSQ junlongg@Junlongs-MacBook-Pro.local (RSA)
+3072 SHA256:kR7tOzLKicg3NgpltuBy9vwmBMMxL6He8n5d9vhfdSQ 1password/personalKey (RSA)
 ```
